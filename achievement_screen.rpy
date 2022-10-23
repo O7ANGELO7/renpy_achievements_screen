@@ -15,7 +15,7 @@ screen achievement_menu():
 
         style_prefix "achievements"
 
-        text "{:01d}/{}".format(len(persistent.my_achievements), len(achievement_name) if len(persistent.my_achievements) == len(achievement_name) else len(achievement_name) - 1) size 30
+        text "{:01d}/{}".format(len(persistent.my_achievements), len(achievement_name) if len(persistent.my_achievements) == len(achievement_name) else len(achievement_name) - 1) size 32
 
         frame:
             
