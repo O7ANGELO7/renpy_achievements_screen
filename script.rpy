@@ -3,7 +3,7 @@
 label start:
 
     "We're going to quickly run an example."
-    $ Achievement.add(achievement_welcome)
+    $ Achievement.add(achievement_name['welcome'])
     "Hey look an achievement."
     "This achievement should now appear in the 'Achievement' screen."
     "It should also be permanent and not disappear even when you exit/restart the game."
@@ -13,18 +13,18 @@ label start:
         "Here. Try it out."
 
         "Grant: Welcome Achievement":
-            if achievement.has(achievement_name['welcome'][0]):
+            if achievement.has(achievement_name['welcome'].name):
                 "You already have this."
                 jump try_achievement
             else:
-                $ Achievement.add(achievement_welcome)
+                $ Achievement.add(achievement_name['welcome'])
 
         "Grant: Secret Achievement":
-            if achievement.has(achievement_name['secret'][0]):
+            if achievement.has(achievement_name['secret'].name):
                 "You already have this."
                 jump try_achievement
             else:
-                $ Achievement.add(achievement_secret)
+                $ Achievement.add(achievement_name['secret'])
 
         "Clear Achievements":
             $ achievements.purge()

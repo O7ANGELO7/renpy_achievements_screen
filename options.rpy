@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.0.5"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -93,6 +93,7 @@ define config.end_game_transition = None
 
 ## A variable to set the transition used when the game starts does not exist.
 ## Instead, use a with statement after showing the initial scene.
+
 
 
 ## Window management ###########################################################
