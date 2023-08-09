@@ -332,8 +332,8 @@ screen achievement_menu():
                                     spacing 0
                                     yfill False
                                     
-                                    text "[t.name]" style 'achievements_label' color '#000000'
-                                    text "[t.message]" color '#000000'
+                                    text t.name style 'achievements_label' color '#000000'
+                                    text t.message color '#000000'
 
                 ## Locked achievements
                 for v in achievement_name.values():
@@ -359,8 +359,8 @@ screen achievement_menu():
 
                                         if v.priority is None:
                                             
-                                            text "[v.name]" style 'achievements_label' color '#FFFFFF33'
-                                            text "[v.message]" color '#FFFFFF33'
+                                            text v.name style 'achievements_label' color '#FFFFFF33'
+                                            text v.message color '#FFFFFF33'
                                         
                                         else:
                                         
