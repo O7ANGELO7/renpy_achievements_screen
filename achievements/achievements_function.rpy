@@ -44,7 +44,7 @@ python early:
                 store.achievement_notification_list.append(trophy)
 
             if trophy not in persistent.my_achievements:
-                ## New acheievements will appear first in the list.
+                ## New achievements will appear first in the list.
                 persistent.my_achievements.insert(0, trophy)
             achievement.sync()
 
@@ -83,7 +83,7 @@ init python:
         ## -------------------------- EXAMPLES -------------------------- 
         "welcome": Achievement(name=_("Welcome to My Game"), message=_("Start the game."), image='gui/trophy_icon.png', priority=None, object_id='ACHIEVEMENT_0001'),
 
-        ## The prio, means that the achievement will be displayed greyed-out before it is granted (or achieved).
+        ## The 'priority' changes the visibility of the achievement before it is achieved/granted.
         ## I use these terms to describe the types of achievements;
         ##            None = default (greyed out and can see the name and description of the achievement.)
         ##        'hidden' = Achievements with this label will be displayed as 'hidden'.
